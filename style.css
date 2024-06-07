@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-size: cover;
+    background-repeat: repeat;
+    color: #000000;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#weather {
+    white-space: pre-wrap; 
+    margin-top: 50px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgb(247, 3, 3);
+    overflow: auto;
+}
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th {
+    border: 4px solid #05d3ee;
+    text-align: left;
+    padding: 8px;
+}
+
+td {
+    border: 4px solid #06b1e6;
+    text-align: left;
+    padding: 8px;
+}
