@@ -20,4 +20,4 @@ var data = [];
      });
  }
  
- populateTable();         make it show 1 day and starding from local pc time
+ populateTable();      
