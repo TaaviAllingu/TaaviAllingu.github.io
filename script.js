@@ -42,13 +42,11 @@ async function populateTable() {
         var cell2 = row.insertCell(1);
         var forecastTime = new Date(data.time[index]);
 
-        // Format time to HH:MM
+       
         var formattedTime = forecastTime.getHours().toString().padStart(2, '0') + ':' + forecastTime.getMinutes().toString().padStart(2, '0');
         
         cell1.innerHTML = formattedTime;
-        cell2.innerHTML = data.temperature_2m[index] + "°C"; // Assuming temperature data is available
+        cell2.innerHTML = data.temperature_2m[index] + "°C"; 
     }
 }
-
-// Call populateTable to load data into the table
 populateTable();
