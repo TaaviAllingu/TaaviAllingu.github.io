@@ -1,7 +1,7 @@
 var data = [];
  
  async function fetchWeatherData() {
-     const response = await fetch("https://api.open-meteo.com/v1/forecast?latitude=59&longitude=26&hourly=temperature_2m&wind_speed_unit=ms&timezone=auto");
+     const response = await fetch("https://api.met.no/weatherapi/locationforecast/2.0//forecast?latitude=59&longitude=26");
      const weatherData = await response.json();
      data = weatherData.hourly; // Adjusted to match the actual structure of the API response
  }
