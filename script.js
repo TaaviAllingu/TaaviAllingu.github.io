@@ -15,7 +15,7 @@ async function populateTable() {
         var cell1 = row.insertCell(0);
         var cell2 = row.insertCell(1);
         
-        var time = timeseries.time; 
+        var time = data.properties.timeseries.time; 
         var temperature = timeseries.air_temperature; 
         
         cell1.innerHTML = time;
