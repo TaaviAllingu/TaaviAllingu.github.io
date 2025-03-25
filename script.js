@@ -1,7 +1,7 @@
 var data = [];
 
 async function fetchWeatherData() {
-    const response = await fetch("https://api.met.no/weatherapi/locationforecast/2.0/forecast?latitude=59&longitude=26");
+    const response = await fetch("https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=60.10&lon=9.58");
     const weatherData = await response.json();
     data = weatherData.properties.timeseries; 
 }
